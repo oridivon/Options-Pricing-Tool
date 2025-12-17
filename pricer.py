@@ -124,19 +124,23 @@ if T > 0:
     pnl = theo_price - buy_price if buy_price > 0 else 0
 
     st.title(f"📊 Option Pricing Tool: {ticker}")
-    with st.expander("ℹ️ - About this Project"):
-    st.markdown("""
-    ### **Project Overview**
-    This tool was engineered to bridge the gap between theoretical valuation models and real-time market data. I leveraged knowledge from my **Fixed Income and Derivatives** coursework, combined with **Python** development, to create a fully functional pricing engine.
 
-    ### **Key Technical Features**
-    * **Black-Scholes Model:** Custom implementation of the closed-form solution.
-    * **Real-Time Data:** Automated fetching of Spot Prices and Risk-Free Rates via API.
-    * **Scenario Analysis:** Interactive P&L heatmaps to visualize risk.
-    
-    *Built by **Ori Divon**.*
-    """)
-# -----------------------
+    # --- PASTE THIS EXACTLY ---
+    with st.expander("ℹ️ - About this Project"):
+        # NOTICE: The line below is indented further to the right
+        st.markdown("""
+        ### **Project Overview**
+        This tool was engineered to bridge the gap between theoretical valuation models and real-time market data. I leveraged knowledge from my **Fixed Income and Derivatives** coursework, combined with **Python** development, to create a fully functional pricing engine.
+
+        ### **Key Technical Features**
+        * **Black-Scholes Model:** Custom implementation of the closed-form solution.
+        * **Real-Time Data:** Automated fetching of Spot Prices and Risk-Free Rates via API.
+        * **Scenario Analysis:** Interactive P&L heatmaps to visualize risk.
+        
+        *Built by **Ori Divon**.*
+        """)
+    # --------------------------
+
     st.markdown("---")
 
     col1, col2, col3, col4 = st.columns(4)
