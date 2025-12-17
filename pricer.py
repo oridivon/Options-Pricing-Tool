@@ -227,9 +227,18 @@ with st.expander("ℹ️ Model Assumptions & Methodology"):
         st.markdown("### 3. Greek Definitions")
         st.markdown("""
         * **Delta ($\Delta$):** Sensitivity to **Spot Price**.
-        * **Gamma ($\Gamma$):** Sensitivity to **Delta** (convexity).
         * **Vega ($\nu$):** Sensitivity to **Volatility** (1% change).
         * **Theta ($\Theta$):** Daily **Time Decay** (money lost per day).
         * **Rho ($\rho$):** Sensitivity to **Interest Rates**.
         """)
 
+    st.markdown("---")
+
+    # 4. P&L Calculation
+    st.markdown("### 4. P&L Calculation")
+    st.markdown("""
+    The profit and loss is calculated based on the difference between current market value and cost basis:
+    * **Positive values** indicate a gain.
+    * **Negative values** indicate a loss.
+    """)
+    st.latex(r"P\&L = (V_{market} - V_{cost}) \times \text{Contracts} \times 100")
