@@ -215,3 +215,19 @@ with st.expander("ℹ️ Model Assumptions & Methodology"):
         * **Theta ($\Theta$):** Daily **Time Decay** (money lost per day).
         * **Rho ($\rho$):** Sensitivity to **Interest Rates**.
         """)
+
+st.markdown("---")  # A visual divider line
+
+# Create a collapsible section
+with st.expander("ℹ️ - About this Project (Methodology & Tech Stack)"):
+    st.markdown("""
+    ### **Project Overview**
+    This tool was engineered to bridge the gap between theoretical valuation models and real-time market data. I leveraged knowledge from my **Fixed Income and Derivatives** coursework, combined with **Python** development, to create a fully functional pricing engine for any security listed on Yahoo Finance.
+
+    ### **Key Technical Features**
+    * **Black-Scholes Model:** Custom implementation of the closed-form solution for European options.
+    * **Real-Time Data:** Automated fetching of Spot Prices and Risk-Free Rates (10Y Treasury Yields) via API.
+    * **Scenario Analysis:** Interactive P&L heatmaps to visualize risk across Spot and Volatility changes.
+    
+    *Built by **Ori Divon** using Streamlit, NumPy, and Plotly.*
+    """)
